@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head> 
+
+<head>
     <title>FORM PAGE</title>
 </head>
+
 <body>
     <form>
-        <label>NAME</label><input type="Name" name="fname"><BR><BR>
-        <label>PASSWORD</label><input type="password" name="password"><BR><BR>
-        <label>GENDER</label><input type="radio" name="GENDER"><label>MALE</label><input type="radio" name="GENDER"><label>FEMALE</label><BR><BR>
-    
+        <fieldset>
+        <label>NAME&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; </label><input
+            type="Name" name="fname" placeholder="Enter Your Name"><BR><BR>
+        <label>PASSWORD&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; </label><input type="password" name="password"><BR><BR>
+        <label>GENDER &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label><input type="radio" name="GENDER"
+            id="male"><label for="male">MALE</label><input type="radio" name="GENDER" id="female"><label
+            for="female">FEMALE</label><BR><BR>
+        <label>HOBBIE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; </label><input type="checkbox" name="hobbie"
+            id="male0"><label for="male0">SPORT</label>
+        <input type="checkbox" name="hobbie" id="male1"><label for="male1">MUSIC</label>
+        <input type="checkbox" name="hobbie" id="male2"><label for="male2">GAME</label><BR><BR>
+        <label>MESSAGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><textarea></textarea><br><br>
+        <label>COUNTRY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select>
+            <option>IND</option>
+            <option>CAN</option>
+            <option>US</option>
+            <option>UK</option>
+        </select><BR><BR>
+        <label>MUSIC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select>
+            <optgroup label="MUSIC">
+                <option>A.R.RAHMAN</option>
+                <option>DARSHAN RAVAL</option>
+                <option>BADSHAH</option>
+            </optgroup>
+            <optgroup label="SUPERSTAR">
+                <option>Sanjay Dutt</option>
+                <option>YASH</option>
+                <option>Manoj Bajpayee</option>
+            </optgroup>
+        </select><BR><BR>
+        <label>CARS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input list="CARS" placeholder="SELECT CARS">
+        <datalist id="CARS">
+            <option value="TOYOTA"></option>
+            <option value="TATA"></option>
+            <option value="SUZUKI"></option>
+            <option value="AUDI"></option>
+        </datalist><br><BR>
+            <label>UPLOAD FILE</label> <input type="file" name=""><br><br>
+            <input type="image" src="C:\Users\Admin\OneDrive\Pictures\Samsung Gallery\DCIM\Camera"  alt="submit button"> <br><br>
+            <label>Select color</label><input type="color"><br><br>
+            <label>number</label> <input type="number" max="100" maxlength="100"  min="0" minlength="0"><br><br>
+            <label>Date</label> <input type="date"><br><br>
+            <label>time</label> <input type="time" accept="auto"><br><br>
+            <label>Email</label> <input type="Email"><br><br>
+            <label>Url</label><input type="url"><br><br>
 
+
+
+
+
+
+
+
+
+            <input type="submit" value="save"/>
+            <input type="reset" value="reset"/>
+
+
+
+
+        </fieldset>
     </form>
 
 </body>
+
 </html>
